@@ -46,6 +46,7 @@
   </head>
   <body>
 <main>
+  <!-- SideBAR -->
   <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 230px;">
       <span class="fs-5">Marquesitas Bicho</span>
     </a>
@@ -68,14 +69,15 @@
       </li>
     </ul>
   </div>
-
+  <!-- SideBAR -->
+    <!-- Contenedor principal -->
   <div class="py-0 bg-white overflow-auto">
-
+      <!-- Titulo Sugerencias -->
     <div class="sugerencia pricing-header py-0 px-0 pb-md-4 pt-md-4  text-center bg-warning">
       <h1 class="display-4">Sugerencias</h1>
-    </div>
-
-    
+    </div>  
+      <!-- Titulo Sugerencias -->
+    <!-- Sugerencias -->
     <div class="row row-cols-1 row-cols-md-4 mb-3 text-center py-5 px-5">
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
@@ -376,14 +378,18 @@
         </div>
       </div>
       </div>
+      <!-- Sugerencias -->
       <div class="b-example-divider"></div>
-      <div class=" pricing-header py-0 px-0 pb-md-4 pt-md-4 bg-warning mx-auto text-center">
-        <h1 class="display-4">MENÚ</h1>
-      </div>
+        <!-- Titulo Menu -->
+         <div class=" pricing-header py-0 px-0 pb-md-4 pt-md-4 bg-warning mx-auto text-center">
+           <h1 class="display-4">MENÚ</h1>
+         </div>
+        <!-- Titulo Menu -->
+      <!-- Menu -->
+        <!-- precios -->
       <div class="pricing-header py-2 px-0 pb-md-4 pt-md-4 mx-auto text-center">
         <h1 class="display-6">Precios</h1>
       </div>
-      <div class="b-example-divider-sub"></div>
       <div class=" menu table-responsive pb-5 py-0 px-5">
         <table class="table text-center">
           <thead>
@@ -426,14 +432,15 @@
         </table>
         <br>
     </div>
+      <!-- precios -->
+
+      <!-- Ingredientes -->
     <div class="b-example-divider-sub"></div>
-    <div class="table-responsive">
-      <div class=" pricing-header py-3 px-3 pb-md-4 pt-md-4 mx-auto text-center">
-        <h1 class="display-6">Ingredientes</h1>
-      </div>
-      <div class="b-example-divider-sub"></div>
-  
-      <table class="table text-center pb-5 py-5 px-5 pb-md-4 pt-md-4">
+    <div class=" pricing-header py-2 px-0 pb-md-4 pt-md-4 mx-auto text-center">
+      <h1 class="display-6">Ingredientes</h1>
+    </div> 
+    <div class="table-responsive menu pb-5 py-0 px-5">
+      <table class="table text-center ">
         <thead>
           <tr>
             <th style="width: 25%;">descripcion</th>
@@ -500,6 +507,37 @@
         </tbody>
       </table>
     </div>
+      <!-- Ingredientes -->
+
+    <div class="b-example-divider"></div>
+        <div class="pricing-header py-0 px-0 pb-md-4 pt-md-4 bg-warning mx-auto text-center">
+          <h1 class="display-4">DATOS DE TRANFERENCIA</h1>
+        </div>
+
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+          <div class="col-md-5 p-lg-5 mx-auto text-start">
+            <h5>titular</h5>
+              <ul class="list-unstyled text-small">
+                <li class="titular mb-1" id="Luis Antonio Tovilla Salados">luis antonio tovilla suarez</li>
+                <button onclick="copiarContenido()">copiar</button>
+              </ul>
+              <h5>cuenta Clave</h5>
+              <ul class="list-unstyled text-small">
+                <li class="clave mb-1" id="myInput">012 790 015 41086621 1
+                </li>
+                  <button onclick="copyTexts()">copiar</button>
+              </ul>
+              <h5>Banco</h5>
+              <ul class="list-unstyled text-small">
+                <li class="banco mb-1">BBVA</li>
+              </ul>
+              <h5>numero Telefonico</h5>
+              <ul class="list-unstyled text-small">
+                <li class="telefono mb-1">993 118 0228</li>
+                <button>copiar</button>
+              </ul>
+          </div>
+        </div>
     </main>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
       <script src="sidebars.js"></script>

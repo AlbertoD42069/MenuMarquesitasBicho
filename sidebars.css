@@ -35,7 +35,7 @@ main {
   /*width: 1.5rem;*/
   /*height: 100vh;*/
 
-  height: 0.5rem;
+  height: 0.05rem;
   width: 200vh;
   background-color: rgba(0, 0, 0, .1);
   border: solid rgba(0, 0, 0, .15);
