@@ -23,7 +23,7 @@ main {
   /*height: 100vh;*/
 
   height: 3rem;
-  width: 200vh;
+  width: 170vh;
   background-color: rgba(0, 0, 0, .1);
   border: solid rgba(0, 0, 0, .15);
   border-width: 1px 0;
@@ -36,7 +36,7 @@ main {
   /*height: 100vh;*/
 
   height: 0.05rem;
-  width: 200vh;
+  width: 170vh;
   background-color: rgba(0, 0, 0, .1);
   border: solid rgba(0, 0, 0, .15);
   border-width: 1px 0;
@@ -104,3 +104,8 @@ main {
 
 .fw-semibold { font-weight: 600; }
 .lh-tight { line-height: 1.25; }
+
+html {
+  scroll-behavior: smooth;
+ }
+
