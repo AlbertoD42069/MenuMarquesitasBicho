@@ -38,11 +38,7 @@
         }
       }
     </style>
-
-    
     <!-- Custom styles for this template -->
-    <script src="verMenu.js"></script>
-
   </head>
   <body>
 <main>
@@ -63,7 +59,7 @@
         </button>
       </li>
       <li>
-        <button href="#" class="nav-link text-white" onclick="scrollToElement(event)" data-scroll="transferencia">
+        <button class="nav-link text-white" onclick="scrollToElement(event)" data-scroll="transferencia">
           Datos de tranferencia
         </button>
       </li>
@@ -514,18 +510,17 @@
           <h1 class="display-4" id-div="transferencia">DATOS DE TRANFERENCIA</h1>
         </div>
         <!--Datos de tranferencia-->
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" id="content">
           <div class="col-md-0 p-lg-0 mx-auto text-start">
             <h5>titular</h5>
               <ul class="list-unstyled text-small">
-                <li class="titular mb-1" id="Luis Antonio Tovilla Salados">luis antonio tovilla suarez</li>
-                <button onclick="copiarContenido()">copiar</button>
+                <li class="titular mb-1" id="titular">luis antonio tovilla suarez</li>
+                <button type="button" class="btn btn-success" onclick="copiarTitular()">copiar</button>
               </ul>
               <h5>cuenta Clave</h5>
               <ul class="list-unstyled text-small">
-                <li class="clave mb-1" id="myInput">012 790 015 41086621 1
-                </li>
-                  <button onclick="copyTexts()">copiar</button>
+                <li class="clave mb-1" id="clave">012 790 015 41086621 1</li>
+                  <button class="btn btn-success" onclick="copiarClave()">copiar</button>
               </ul>
               <h5>Banco</h5>
               <ul class="list-unstyled text-small">
@@ -533,8 +528,8 @@
               </ul>
               <h5>numero Telefonico</h5>
               <ul class="list-unstyled text-small">
-                <li class="telefono mb-1">993 118 0228</li>
-                <button>copiar</button>
+                <li class="telefono mb-1" id="numero">993 118 0228</li>
+                <button class="btn btn-success" onclick="copiarNumero()">copiar</button>
               </ul>
           </div>
           <footer class="pt-3 text-muted border-top">
@@ -548,5 +543,7 @@
     </main>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
       <script src="sidebars.js"></script>
+      <script src="copiarTexto.js"></script>
+      <script src="verMenu.js"></script>
   </body>
 </html>
